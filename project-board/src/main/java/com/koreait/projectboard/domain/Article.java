@@ -1,72 +1,16 @@
 package com.koreait.projectboard.domain;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.LinkedHashSet;
-import java.util.Objects;
-import java.util.Set;
 
-@Getter //setter은 필요할때만 쓸예정
-@ToString
-@Table(indexes={
-        @Index(columnList = "title"),
-        @Index(columnList = "hashtag"),
-        @Index(columnList = "createdAt"),
-        @Index(columnList = "createdBy")
-})        //select가 부하가 가장 많이 든다.
-@EntityListeners(AuditingEntityListener.class)
-@Entity
 public class Article {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //DBMS마다 다르다
-    private Long id;
+    private long id;
+    private String title;
+    private String content;
+    private String hashtag;
+    private LocalDateTime createdAt;
+    private String createdBy;
+    private LocalDateTime modifiedAt;
+    private String modifiedBy;
 
-    @Setter @Column(nullable = false) private String title;
-    @Setter @Column(nullable = false, length = 10000) private String content;
-    @Setter private String hashtag;
-
-    @CreatedDate @Column(nullable = false) private LocalDateTime createdAt;
-    @CreatedBy @Column(nullable = false, length = 100)private String createdBy;
-    @LastModifiedDate @Column(nullable = false)private LocalDateTime modifiedAt;
-    @LastModifiedBy @Column(nullable = false, length = 100)private String modifiedBy;
-
-    @ToString.Exclude   //tostring은 제외하고 값을 뽑아달라
-    @OrderBy("id")
-    @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
-    private final Set<ArticleComment> articleComments = new LinkedHashSet<>();
-    protected Article() {
-    }
-    // 변경할 수 있는 것만 생성자를 만들어준다.
-    private Article(String title, String content, String hashtag) {
-        this.title = title;
-        this.content = content;
-        this.hashtag = hashtag;
-    }
-
-
-    public static Article of(String title, String content, String hashtag) {
-        return new Article(title,content,hashtag);
-        //외부에서 불렀을때는 새로 생성하는게 아닌, 불러다가 알려주는거!
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if(this == obj) return true;
-        if(!(obj instanceof Article article)) return false;
-        return id!=null && id.equals(article.id);
-    }
 }
