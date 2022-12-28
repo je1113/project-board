@@ -1,5 +1,6 @@
 package com.koreait.projectboard.domain;
 
+
 import java.time.LocalDateTime;
 
 public class Article {
@@ -11,4 +12,5 @@ public class Article {
     private String createdBy;
     private LocalDateTime modifiedAt;
     private String modifiedBy;
+
 }
