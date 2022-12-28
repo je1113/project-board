@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class ArticleComment {
     private long id;
-    private long articleId;
+    private long article;   //게시글 (id)
     private String content;
     private LocalDateTime createdAt;
     private String createdBy;
