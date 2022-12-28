@@ -1,12 +1,11 @@
-package com.koreait.projectboard2.domain;
+package com.koreait.projectboard.domain;
 
 import java.time.LocalDateTime;
 
-public class Article {
+public class ArticleComment {
     private long id;
-    private String title;
+    private long articleId;
     private String content;
-    private String hashtag;
     private LocalDateTime createdAt;
     private String createdBy;
     private LocalDateTime modifiedAt;
