@@ -54,7 +54,7 @@ public class Article {      // 문제(ex.??)가 많기 떄문에 원래는 sette
         this.hashtag = hashtag;
     }
 
-    private static Article of(String title, String content, String hashtag) {    // 외부에서 쓸 때는 이 함수를 통해 Article을 호출해서 사용
+    public static Article of(String title, String content, String hashtag) {    // 외부에서 쓸 때는 이 함수를 통해 Article을 호출해서 사용
         return new Article(title, content, hashtag);
     }
 
