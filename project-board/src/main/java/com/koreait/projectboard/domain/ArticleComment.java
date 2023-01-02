@@ -20,19 +20,14 @@ import java.util.Objects;
         @Index(columnList = "createdAt"),
         @Index(columnList = "createdBy")
 })
-@EntityListeners(AuditingEntityListener.class)
 @Entity
-public class ArticleComment {
+public class ArticleComment extends AuditingFields{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Setter @ManyToOne(optional = false) private Article article;   // 게시글(id)    // 객체로 쓰려고 뒤에 id 안붙임  // 게시글 번호 하나에 댓글 여러개 등록될 수 있음. @ManyToOne, optional = false: null 값이 되더라도 값을 false로 두고 처리해야 되도록 만들어줌.
     @Setter @Column(nullable = false, length = 500) private String content;             // 본문
 
-    @CreatedDate @Column(nullable = false) private LocalDateTime createdAt;    // 생성일시
-    @CreatedBy @Column(nullable = false) private String createdBy;           // 생성자
-    @LastModifiedDate @Column(nullable = false) private LocalDateTime modifiedAt;   // 수정일시
-    @LastModifiedBy @Column(nullable = false) private String modifiedBy;          // 수정자
 
     protected ArticleComment() {}       // 빈 생성자
 

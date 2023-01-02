@@ -1,3 +1,4 @@
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by , modified_at, modified_by) value ('apple','1234','사과','apple@apple.com','안녕? 난 김사과야',now(),'admin',now(),'admin');
 insert into article (title, content, hashtag, created_at, created_by, modified_at, modified_by) values ('Matsoft', 'RisusAuctorSed.png', 'Orin', '2022-07-03', 'Chance', '2022-09-16', 'Gerianne');
 insert into article (title, content, hashtag, created_at, created_by, modified_at, modified_by) values ('Alpha', 'Quam.gif', 'Summer Ridge', '2022-09-11', 'Hobey', '2022-11-04', 'Imelda');
 insert into article (title, content, hashtag, created_at, created_by, modified_at, modified_by) values ('Zathin', 'NequeLiberoConvallis.xls', 'Goodland', '2022-10-07', 'Austin', '2022-11-16', 'Auroora');

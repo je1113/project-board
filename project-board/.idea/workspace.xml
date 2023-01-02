@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c5c6e67-f415-46a2-ae78-dfd529f823a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/koreait/projectboard/domain/JpaRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/com/koreait/projectboard/domain/QArticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/com/koreait/projectboard/domain/QArticleComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/com/koreait/projectboard/domain/QAuditingFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/com/koreait/projectboard/domain/QUserAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/domain/AuditingFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/domain/UserAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/repository/UserAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/koreait/projectboard/domain/ArticleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,13 +24,23 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/project-board.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/koreait/projectboard/ProjectBoardApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/koreait/projectboard/ProjectBoardApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/koreait/projectboard/domain/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/koreait/projectboard/domain/Article.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/koreait/projectboard/domain/ArticleComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/koreait/projectboard/domain/ArticleComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-board.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project-board.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/domain/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/domain/ArticleComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/domain/ArticleComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/repository/ArticleCommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/repository/ArticleCommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/projectboard/repository/ArticleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/koreait/projectboard/domain/JpaRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/koreait/projectboard/domain/JpaRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +85,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -96,6 +115,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -110,6 +130,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "spring.configuration.checksum": "21a0b134ab803e0fda52b04658bb3d83",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -126,8 +148,8 @@
       <recent name="com.koreait.projectboard.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.JpaRepositoryTest.delete">
-    <configuration name="JpaRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.ProjectBoardApplication">
+    <configuration name="ArticleTest.detail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.koreait.projectboard.domain.JpaRepositoryTest&quot;" />
+            <option value="&quot;com.koreait.projectboard.domain.ArticleTest.detail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,7 +172,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JpaRepositoryTest.delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ArticleTest.detailComment" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -163,7 +185,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.koreait.projectboard.domain.JpaRepositoryTest.delete&quot;" />
+            <option value="&quot;com.koreait.projectboard.domain.ArticleTest.detailComment&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -173,7 +195,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JpaRepositoryTest.insert" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ArticleTest.detailComments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -186,7 +208,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.koreait.projectboard.domain.JpaRepositoryTest.insert&quot;" />
+            <option value="&quot;com.koreait.projectboard.domain.ArticleTest.detailComments&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -196,7 +218,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JpaRepositoryTest.select" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ArticleTest.read (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -209,7 +231,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.koreait.projectboard.domain.JpaRepositoryTest.select&quot;" />
+            <option value="&quot;com.koreait.projectboard.domain.ArticleTest.read&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -219,7 +241,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JpaRepositoryTest.update" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ArticleTest.readComments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -232,7 +254,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.koreait.projectboard.domain.JpaRepositoryTest.update&quot;" />
+            <option value="&quot;com.koreait.projectboard.domain.ArticleTest.readComments&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -251,23 +273,24 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JpaRepositoryTest.delete" />
-        <item itemvalue="Gradle.JpaRepositoryTest" />
-        <item itemvalue="Gradle.JpaRepositoryTest.update" />
-        <item itemvalue="Gradle.JpaRepositoryTest.insert" />
-        <item itemvalue="Gradle.JpaRepositoryTest.select" />
+        <item itemvalue="Gradle.ArticleTest.detailComment" />
+        <item itemvalue="Gradle.ArticleTest.read (1)" />
+        <item itemvalue="Gradle.ArticleTest.readComments" />
+        <item itemvalue="Gradle.ArticleTest.detailComments" />
+        <item itemvalue="Gradle.ArticleTest.detail" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97794dd0-673b-4a39-afd1-7f765bbb9f66" name="Changes" comment="" />
+      <changelist id="9c5c6e67-f415-46a2-ae78-dfd529f823a8" name="Changes" comment="" />
       <created>1672107325820</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672107325820</updated>
       <workItem from="1672107327298" duration="3403000" />
+      <workItem from="1672618639992" duration="13518000" />
     </task>
     <servers />
   </component>

@@ -20,7 +20,9 @@ spring:
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
-  h2.console.enabled: true
+#  h2.console.enabled: true
   sql.init.mode: always
-
+  data.rest:
+    base-path: /api
+    detection-strategy: annotated #어노테이션을 걸어논 아이만 api에 접근가능 - repo에 어노테이션 추가!
 server.port: 8989

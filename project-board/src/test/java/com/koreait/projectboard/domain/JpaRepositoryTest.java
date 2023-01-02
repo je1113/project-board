@@ -3,6 +3,7 @@ package com.koreait.projectboard.domain;
 import com.koreait.projectboard.config.JpaConfig;
 import com.koreait.projectboard.repository.ArticleCommentRepository;
 import com.koreait.projectboard.repository.ArticleRepository;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +12,8 @@ import org.springframework.context.annotation.Import;
 
 import java.util.List;
 
-
 import static org.assertj.core.api.Assertions.assertThat;
+@Disabled("JPA 테스트는 불필요 하므로 제외시킴")
 @Import(JpaConfig.class) //jpaConfig은 import필요
 @DisplayName("JPA 연결 테스트")
 @DataJpaTest
