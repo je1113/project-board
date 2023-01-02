@@ -26,9 +26,8 @@ import java.util.Set;
         @Index(columnList = "createdAt"),
         @Index(columnList = "createdBy")
 })
-@EntityListeners(AuditingEntityListener.class)      // 사용할 수 있게끔 Listener로 등록.
 @Entity                     // 프라이머리키 설정 안하면 오류남
-public class Article {      // 문제(ex.??)가 많기 떄문에 원래는 setter 이런거 함부로 쓰면 안됨 -> @Data 대신 필요한 것만 골라서 선언
+public class Article extends AuditingFields{      // 문제(ex.??)가 많기 떄문에 원래는 setter 이런거 함부로 쓰면 안됨 -> @Data 대신 필요한 것만 골라서 선언
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)     // DBMS마다 다름. MySQL의 경우 strategy를 IDENTITY로 해줌
     private Long id;
@@ -36,10 +35,7 @@ public class Article {      // 문제(ex.??)가 많기 떄문에 원래는 sette
     @Setter @Column(nullable=false, length=10000) private String content;   // 본문   // @Column(nullable = false): Null이 안되도록 함  // length=10000 1만자까지 가능하도록 설정
     @Setter private String hashtag;                                         // 해시태그
 
-    @CreatedDate @Column(nullable=false) private LocalDateTime createdAt;           // 생성일시 // @CreatedDate: 생성일시 자동으로 넣어줌
-    @CreatedBy @Column(nullable=false, length=100) private String createdBy;        // 생성자   // @CreatedBy:
-    @LastModifiedDate @Column(nullable=false) private LocalDateTime modifiedAt;     // 수정일시 // @LastModifiedDate: 작성된 날짜, 수정된 날짜에 모두 자동으로 넣어줌
-    @LastModifiedBy @Column(nullable=false, length=100) private String modifiedBy;  // 수정자   // @LastModifiedBy:
+
 
     @ToString.Exclude       // join하는 순간 toString에러가 있음. 그러니 ToString을 제외하고 값 뽑아 달라
     @OrderBy("id")          // id를 기준으로 orderby 해줄 것임
